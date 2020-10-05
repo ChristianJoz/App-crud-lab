@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#744e3b"
+    tools:context=".activity_consulta_spinner">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="Seleccione una opción"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+
+        <Spinner
+            android:id="@+id/sp_options"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="#fff"
+            android:drawSelectorOnTop="true"
+            android:paddingLeft="15dp"
+            android:spinnerMode="dropdown" />
+
+
+        <TextView
+            android:id="@+id/tv_cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Código: "
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:text="Descripción: "
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:text="Precio: "
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menu_fab"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/back"
+            app:borderWidth="0dp"
+            app:fab_label="Retornar"
+            app:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_yo"
+            app:borderWidth="0dp"
+            app:fab_label="Autor"
+            app:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exit"
+            app:borderWidth="0dp"
+            app:fab_label="Salir"
+            app:fab_size="normal" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+

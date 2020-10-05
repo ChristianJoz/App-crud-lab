@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.appconcrud.MainActivity">
+    <item
+        android:id="@+id/action_acerca"
+        android:orderInCategory="100"
+        android:title="Informacion"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_limpiar"
+        android:orderInCategory="100"
+        android:title="Limpiar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_listaArticulos"
+        android:orderInCategory="100"
+        android:title="Spinner"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_listaArticulos1"
+        android:orderInCategory="100"
+        android:title="ListView"
+        app:showAsAction="never" />
+</menu>
